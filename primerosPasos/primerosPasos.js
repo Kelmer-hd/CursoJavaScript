@@ -77,4 +77,56 @@ console.log(saludo2);
 
 
 
+/**************************************************************** */
+//                            NUMEROS(NUMBERS)
+/*******************************************************************/
 
+let a = 2;
+let b = new Number(1);
+let c = 7.19;
+let d = "5.6";
+
+console.log(typeof a, typeof b, typeof c, typeof d);
+console.log(a);
+console.log(b);
+console.log(c.toFixed(2)); // Redondea con dos decimales
+console.log(parseInt(c));  // Convierte a entero sin decimales
+console.log(a + b);
+console.log(c + parseInt(d));
+console.log(c + parseFloat(d));
+
+
+
+/**************************************************************** */
+//                           BOOLEANS
+/*******************************************************************/
+
+let verdadero = true;
+let falso = false;
+let v = Boolean(true);
+let f = Boolean(false);
+console.log(verdadero);
+console.log(falso);
+console.log(Boolean(0));
+console.log(Boolean(-7));
+console.log(Boolean(""));
+console.log(Boolean(" "));
+
+
+
+/**************************************************************** */
+//                       UNDEFINED, NULL, NaN
+/*******************************************************************/
+
+// UNDEFINED : no se ha asignado ningún valor a una variable o un elemento de matriz
+// NULL       : Es el valor que se le da a las variables cuando no tienen nada asignado
+
+let indefinida;
+console.log(indefinida);
+
+let nulo = null;
+console.log(nulo);
+
+// NaN : Not a Number (No es número)
+let noEsUnNumero = "hola" * 3.7;
+console.log(noEsUnNumero);
